@@ -46,7 +46,7 @@
             this.butDeleteAll = new System.Windows.Forms.Button();
             this.butDeleteCurrently = new System.Windows.Forms.Button();
             this.butProcent = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.numb0 = new System.Windows.Forms.Button();
             this.butRemoSym = new System.Windows.Forms.Button();
             this.butKoma = new System.Windows.Forms.Button();
             this.butEqual = new System.Windows.Forms.Button();
@@ -221,15 +221,15 @@
             this.butProcent.UseVisualStyleBackColor = true;
             this.butProcent.Click += new System.EventHandler(this.butProcent_Click);
             // 
-            // button1
+            // numb0
             // 
-            this.button1.Location = new System.Drawing.Point(121, 549);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 76);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.numb0.Location = new System.Drawing.Point(121, 549);
+            this.numb0.Name = "numb0";
+            this.numb0.Size = new System.Drawing.Size(90, 76);
+            this.numb0.TabIndex = 17;
+            this.numb0.Text = "0";
+            this.numb0.UseVisualStyleBackColor = true;
+            this.numb0.Click += new System.EventHandler(this.button1_Click);
             // 
             // butRemoSym
             // 
@@ -269,7 +269,7 @@
             this.Controls.Add(this.butEqual);
             this.Controls.Add(this.butKoma);
             this.Controls.Add(this.butRemoSym);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.numb0);
             this.Controls.Add(this.numbDivis);
             this.Controls.Add(this.butDeleteAll);
             this.Controls.Add(this.butDeleteCurrently);
@@ -313,7 +313,7 @@
         private System.Windows.Forms.Button butDeleteAll;
         private System.Windows.Forms.Button butDeleteCurrently;
         private System.Windows.Forms.Button butProcent;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button numb0;
         private System.Windows.Forms.Button butRemoSym;
         private System.Windows.Forms.Button butKoma;
         private System.Windows.Forms.Button butEqual;

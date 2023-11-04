@@ -59,7 +59,7 @@ namespace Calculator
 
         private void numbDivis_Click(object sender, EventArgs e)
         {
-
+            AddToText("/");
         }
 
         private void butRemoSym_Click(object sender, EventArgs e)
@@ -69,17 +69,17 @@ namespace Calculator
 
         private void butMultiple_Click(object sender, EventArgs e)
         {
-
+            AddToText("*");
         }
 
         private void butMinus_Click(object sender, EventArgs e)
         {
-
+            AddToText("-");
         }
 
         private void butPlus_Click(object sender, EventArgs e)
         {
-
+            AddToText("+");
         }
 
         private void numb3_Click(object sender, EventArgs e)
@@ -104,12 +104,12 @@ namespace Calculator
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            AddToText("0");
         }
 
         private void butKoma_Click(object sender, EventArgs e)
         {
-
+            AddToText(",");
         }
 
         private void butEqual_Click(object sender, EventArgs e)
