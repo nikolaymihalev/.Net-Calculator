@@ -13,7 +13,6 @@ namespace Calculator
     public partial class Form1 : Form
     {
         int result = 0;
-        List<string> symbols = new List<string>();
         string sign = string.Empty;
 
         public Form1()
@@ -146,7 +145,6 @@ namespace Calculator
             {
                 expressionBox.Text += text;
             }
-            symbols.Add(text);
         }
 
         void Count(string number)
@@ -154,19 +152,19 @@ namespace Calculator
             if (result == 0)
             {
                 result = int.Parse(number);
+                return;
             }
-            else if(number=="+"||number=="-"||number=="*"||number=="/") 
+            if (sign != string.Empty) 
             {
-                if (sign != string.Empty) 
+                switch (sign) 
                 {
-                    switch (sign) 
-                    {
-                        case "+":result += int.Parse(number); break;
-                        case "-":result -= int.Parse(number); break;
-                        case "*":result *= int.Parse(number); break;
-                        case "/":result /= int.Parse(number); break;
-                    }
+                    case "+":result += int.Parse(number); break;
+                    case "-":result -= int.Parse(number); break;
+                    case "*":result *= int.Parse(number); break;
+                    case "/":result /= int.Parse(number); break;
                 }
+
+                sign = string.Empty;
             }
             else
             {
