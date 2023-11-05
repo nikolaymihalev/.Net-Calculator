@@ -13,6 +13,7 @@ namespace Calculator
     public partial class Form1 : Form
     {
         int result = 0;
+        List<string> symbols = new List<string>();
         string sign = string.Empty;
 
         public Form1()
@@ -27,43 +28,44 @@ namespace Calculator
 
         private void butDeleteAll_Click(object sender, EventArgs e)
         {
-
+            expressionBox.Text = 0.ToString();
+            result = 0;
         }
 
         private void numb8_Click(object sender, EventArgs e)
         {
             AddToText("8");
-            Count(8);
+            Count("8");
         }
 
         private void numb7_Click(object sender, EventArgs e)
         {
             AddToText("7");
-            Count(7);
+            Count("7");
         }
 
         private void numb4_Click(object sender, EventArgs e)
         {
             AddToText("4");
-            Count(4);
+            Count("4");
         }
 
         private void numb5_Click(object sender, EventArgs e)
         {
             AddToText("5");
-            Count(5);
+            Count("5");
         }
 
         private void numb6_Click(object sender, EventArgs e)
         {
             AddToText("6");
-            Count(6);
+            Count("6");
         }
 
         private void numb9_Click(object sender, EventArgs e)
         {
             AddToText("9");
-            Count(9);
+            Count("9");
         }
 
         private void numbDivis_Click(object sender, EventArgs e)
@@ -98,19 +100,19 @@ namespace Calculator
         private void numb3_Click(object sender, EventArgs e)
         {
             AddToText("3");
-            Count(3);
+            Count("3");
         }
 
         private void num2_Click(object sender, EventArgs e)
         {
             AddToText("2");
-            Count(2);
+            Count("2");
         }
 
         private void num1_Click(object sender, EventArgs e)
         {
             AddToText("1");
-            Count(1);
+            Count("1");
         }
 
         private void butProcent_Click(object sender, EventArgs e)
@@ -121,7 +123,7 @@ namespace Calculator
         private void button1_Click(object sender, EventArgs e)
         {
             AddToText("0");
-            Count(0);
+            Count("0");
         }
 
         private void butKoma_Click(object sender, EventArgs e)
@@ -136,28 +138,40 @@ namespace Calculator
 
         void AddToText(string text) 
         {
-            expressionBox.Text += text;
-
+            if (expressionBox.Text == "0")
+            {
+                expressionBox.Text = text;
+            }
+            else
+            {
+                expressionBox.Text += text;
+            }
+            symbols.Add(text);
         }
 
-        void Count(int number)
+        void Count(string number)
         {
             if (result == 0)
             {
-                result = number;
+                result = int.Parse(number);
             }
-            else 
+            else if(number=="+"||number=="-"||number=="*"||number=="/") 
             {
                 if (sign != string.Empty) 
                 {
                     switch (sign) 
                     {
-                        case "+":result += number; break;
-                        case "-":result -= number; break;
-                        case "*":result *= number; break;
-                        case "/":result /= number; break;
+                        case "+":result += int.Parse(number); break;
+                        case "-":result -= int.Parse(number); break;
+                        case "*":result *= int.Parse(number); break;
+                        case "/":result /= int.Parse(number); break;
                     }
                 }
+            }
+            else
+            {
+                string exten = result.ToString() + number;
+                result = int.Parse(exten);
             }
         }
     }
