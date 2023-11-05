@@ -69,6 +69,7 @@ namespace Calculator
         private void numbDivis_Click(object sender, EventArgs e)
         {
             AddToText("/");
+            sign = "/";
         }
 
         private void butRemoSym_Click(object sender, EventArgs e)
@@ -79,11 +80,13 @@ namespace Calculator
         private void butMultiple_Click(object sender, EventArgs e)
         {
             AddToText("*");
+            sign = "*";
         }
 
         private void butMinus_Click(object sender, EventArgs e)
         {
             AddToText("-");
+            sign = "-";
         }
 
         private void butPlus_Click(object sender, EventArgs e)
@@ -107,7 +110,7 @@ namespace Calculator
         private void num1_Click(object sender, EventArgs e)
         {
             AddToText("1");
-            Count(2);
+            Count(1);
         }
 
         private void butProcent_Click(object sender, EventArgs e)
