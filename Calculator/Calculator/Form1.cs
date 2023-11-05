@@ -163,7 +163,6 @@ namespace Calculator
                     case "*":result *= int.Parse(number); break;
                     case "/":result /= int.Parse(number); break;
                 }
-
                 sign = string.Empty;
             }
             else
