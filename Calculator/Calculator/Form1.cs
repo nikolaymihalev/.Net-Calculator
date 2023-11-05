@@ -33,23 +33,7 @@ namespace Calculator
         private void numb8_Click(object sender, EventArgs e)
         {
             AddToText("8");
-            if (result == 0)
-            {
-                result = 8;
-            }
-            else 
-            {
-                if (sign != string.Empty) 
-                {
-                    switch (sign) 
-                    {
-                        case "+":result += 8; break;
-                        case "-":result -= 8; break;
-                        case "*":result *= 8; break;
-                        case "/":result /= 8; break;
-                    }
-                }
-            }
+            Count(8);
         }
 
         private void numb7_Click(object sender, EventArgs e)
@@ -174,6 +158,27 @@ namespace Calculator
         {
             expressionBox.Text += text;
 
+        }
+
+        void Count(int number)
+        {
+            if (result == 0)
+            {
+                result = number;
+            }
+            else 
+            {
+                if (sign != string.Empty) 
+                {
+                    switch (sign) 
+                    {
+                        case "+":result += number; break;
+                        case "-":result -= number; break;
+                        case "*":result *= number; break;
+                        case "/":result /= number; break;
+                    }
+                }
+            }
         }
     }
 }
