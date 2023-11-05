@@ -39,46 +39,31 @@ namespace Calculator
         private void numb7_Click(object sender, EventArgs e)
         {
             AddToText("7");
-            if (result == 0)
-            {
-                result = 7;
-            }
+            Count(7);
         }
 
         private void numb4_Click(object sender, EventArgs e)
         {
             AddToText("4");
-            if (result == 0)
-            {
-                result = 4;
-            }
+            Count(4);
         }
 
         private void numb5_Click(object sender, EventArgs e)
         {
             AddToText("5");
-            if (result == 0)
-            {
-                result = 5;
-            }
+            Count(5);
         }
 
         private void numb6_Click(object sender, EventArgs e)
         {
             AddToText("6");
-            if (result == 0)
-            {
-                result = 6;
-            }
+            Count(6);
         }
 
         private void numb9_Click(object sender, EventArgs e)
         {
             AddToText("9");
-            if (result == 0)
-            {
-                result = 9;
-            }
+            Count(9);
         }
 
         private void numbDivis_Click(object sender, EventArgs e)
@@ -110,28 +95,19 @@ namespace Calculator
         private void numb3_Click(object sender, EventArgs e)
         {
             AddToText("3");
-            if (result == 0)
-            {
-                result = 2;
-            }
+            Count(3);
         }
 
         private void num2_Click(object sender, EventArgs e)
         {
             AddToText("2");
-            if (result == 0)
-            {
-                result = 2;
-            }
+            Count(2);
         }
 
         private void num1_Click(object sender, EventArgs e)
         {
             AddToText("1");
-            if (result == 0)
-            {
-                result = 1;
-            }
+            Count(2);
         }
 
         private void butProcent_Click(object sender, EventArgs e)
@@ -142,6 +118,7 @@ namespace Calculator
         private void button1_Click(object sender, EventArgs e)
         {
             AddToText("0");
+            Count(0);
         }
 
         private void butKoma_Click(object sender, EventArgs e)
