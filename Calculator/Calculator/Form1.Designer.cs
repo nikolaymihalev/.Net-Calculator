@@ -90,6 +90,7 @@
             this.butPlus.TabIndex = 4;
             this.butPlus.Text = "+";
             this.butPlus.UseVisualStyleBackColor = true;
+            this.butPlus.Click += new System.EventHandler(this.operator_click);
             // 
             // butMinus
             // 
@@ -99,6 +100,7 @@
             this.butMinus.TabIndex = 8;
             this.butMinus.Text = "-";
             this.butMinus.UseVisualStyleBackColor = true;
+            this.butMinus.Click += new System.EventHandler(this.operator_click);
             // 
             // numb6
             // 
@@ -138,6 +140,7 @@
             this.butMultiple.TabIndex = 12;
             this.butMultiple.Text = "x";
             this.butMultiple.UseVisualStyleBackColor = true;
+            this.butMultiple.Click += new System.EventHandler(this.operator_click);
             // 
             // numb9
             // 
@@ -177,6 +180,7 @@
             this.numbDivis.TabIndex = 16;
             this.numbDivis.Text = "÷";
             this.numbDivis.UseVisualStyleBackColor = true;
+            this.numbDivis.Click += new System.EventHandler(this.operator_click);
             // 
             // butDeleteAll
             // 
@@ -186,6 +190,7 @@
             this.butDeleteAll.TabIndex = 15;
             this.butDeleteAll.Text = "C";
             this.butDeleteAll.UseVisualStyleBackColor = true;
+            this.butDeleteAll.Click += new System.EventHandler(this.butDeleteAll_Click);
             // 
             // butDeleteCurrently
             // 
@@ -195,6 +200,7 @@
             this.butDeleteCurrently.TabIndex = 14;
             this.butDeleteCurrently.Text = "CE";
             this.butDeleteCurrently.UseVisualStyleBackColor = true;
+            this.butDeleteCurrently.Click += new System.EventHandler(this.butDeleteCurrently_Click);
             // 
             // butProcent
             // 
