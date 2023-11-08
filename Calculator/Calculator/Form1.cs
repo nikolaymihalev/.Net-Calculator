@@ -42,5 +42,15 @@ namespace Calculator
 
         }
 
+        private void butDeleteCurrently_Click(object sender, EventArgs e)
+        {
+            resultBox.Text = "0";
+        }
+
+        private void butDeleteAll_Click(object sender, EventArgs e)
+        {
+            resultBox.Text = "0";
+            result = 0;
+        }
     }
 }
