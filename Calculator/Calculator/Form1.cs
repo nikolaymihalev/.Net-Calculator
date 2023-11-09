@@ -14,6 +14,7 @@ namespace Calculator
     {
         double result = 0;
         string operationPerformed=string.Empty;
+        private bool isOperationPerformed = false;
 
         public Form1()
         {
@@ -22,19 +23,22 @@ namespace Calculator
 
         private void button_click(object sender, EventArgs e)
         {
-            if (resultBox.Text == "0") 
+            if ((resultBox.Text == "0")||isOperationPerformed) 
             {
                 resultBox.Clear();
             }
+
+            isOperationPerformed = false;
             Button button = (Button)sender;
             resultBox.Text += button.Text;
-            
         }
         private void operator_click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
             operationPerformed = button.Text;
             result=double.Parse(resultBox.Text);
+            labOperation.Text = $"{result} {operationPerformed}";
+            isOperationPerformed = true;
         }
 
         private void Form1_Load(object sender, EventArgs e)

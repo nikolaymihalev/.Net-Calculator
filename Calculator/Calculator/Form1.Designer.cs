@@ -44,8 +44,7 @@
             this.numbDivis = new System.Windows.Forms.Button();
             this.butDeleteAll = new System.Windows.Forms.Button();
             this.butDeleteCurrently = new System.Windows.Forms.Button();
-            this.butProcent = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.labOperation = new System.Windows.Forms.Label();
             this.resultBox = new System.Windows.Forms.TextBox();
             this.butZero = new System.Windows.Forms.Button();
             this.butKoma = new System.Windows.Forms.Button();
@@ -84,7 +83,7 @@
             // 
             // butPlus
             // 
-            this.butPlus.Location = new System.Drawing.Point(310, 395);
+            this.butPlus.Location = new System.Drawing.Point(310, 313);
             this.butPlus.Name = "butPlus";
             this.butPlus.Size = new System.Drawing.Size(90, 76);
             this.butPlus.TabIndex = 4;
@@ -94,7 +93,7 @@
             // 
             // butMinus
             // 
-            this.butMinus.Location = new System.Drawing.Point(310, 313);
+            this.butMinus.Location = new System.Drawing.Point(310, 231);
             this.butMinus.Name = "butMinus";
             this.butMinus.Size = new System.Drawing.Size(90, 76);
             this.butMinus.TabIndex = 8;
@@ -134,11 +133,11 @@
             // 
             // butMultiple
             // 
-            this.butMultiple.Location = new System.Drawing.Point(310, 231);
+            this.butMultiple.Location = new System.Drawing.Point(310, 149);
             this.butMultiple.Name = "butMultiple";
             this.butMultiple.Size = new System.Drawing.Size(90, 76);
             this.butMultiple.TabIndex = 12;
-            this.butMultiple.Text = "x";
+            this.butMultiple.Text = "*";
             this.butMultiple.UseVisualStyleBackColor = true;
             this.butMultiple.Click += new System.EventHandler(this.operator_click);
             // 
@@ -174,17 +173,17 @@
             // 
             // numbDivis
             // 
-            this.numbDivis.Location = new System.Drawing.Point(310, 149);
+            this.numbDivis.Location = new System.Drawing.Point(214, 149);
             this.numbDivis.Name = "numbDivis";
             this.numbDivis.Size = new System.Drawing.Size(90, 76);
             this.numbDivis.TabIndex = 16;
-            this.numbDivis.Text = "÷";
+            this.numbDivis.Text = "/";
             this.numbDivis.UseVisualStyleBackColor = true;
             this.numbDivis.Click += new System.EventHandler(this.operator_click);
             // 
             // butDeleteAll
             // 
-            this.butDeleteAll.Location = new System.Drawing.Point(214, 149);
+            this.butDeleteAll.Location = new System.Drawing.Point(118, 149);
             this.butDeleteAll.Name = "butDeleteAll";
             this.butDeleteAll.Size = new System.Drawing.Size(90, 76);
             this.butDeleteAll.TabIndex = 15;
@@ -194,7 +193,7 @@
             // 
             // butDeleteCurrently
             // 
-            this.butDeleteCurrently.Location = new System.Drawing.Point(118, 149);
+            this.butDeleteCurrently.Location = new System.Drawing.Point(22, 149);
             this.butDeleteCurrently.Name = "butDeleteCurrently";
             this.butDeleteCurrently.Size = new System.Drawing.Size(90, 76);
             this.butDeleteCurrently.TabIndex = 14;
@@ -202,22 +201,13 @@
             this.butDeleteCurrently.UseVisualStyleBackColor = true;
             this.butDeleteCurrently.Click += new System.EventHandler(this.butDeleteCurrently_Click);
             // 
-            // butProcent
+            // labOperation
             // 
-            this.butProcent.Location = new System.Drawing.Point(22, 149);
-            this.butProcent.Name = "butProcent";
-            this.butProcent.Size = new System.Drawing.Size(90, 76);
-            this.butProcent.TabIndex = 13;
-            this.butProcent.Text = "%";
-            this.butProcent.UseVisualStyleBackColor = true;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 13);
-            this.label1.TabIndex = 17;
+            this.labOperation.AutoSize = true;
+            this.labOperation.Location = new System.Drawing.Point(19, 26);
+            this.labOperation.Name = "labOperation";
+            this.labOperation.Size = new System.Drawing.Size(0, 13);
+            this.labOperation.TabIndex = 17;
             // 
             // resultBox
             // 
@@ -252,9 +242,9 @@
             // 
             // butEqual
             // 
-            this.butEqual.Location = new System.Drawing.Point(310, 477);
+            this.butEqual.Location = new System.Drawing.Point(310, 395);
             this.butEqual.Name = "butEqual";
-            this.butEqual.Size = new System.Drawing.Size(90, 76);
+            this.butEqual.Size = new System.Drawing.Size(90, 158);
             this.butEqual.TabIndex = 21;
             this.butEqual.Text = "=";
             this.butEqual.UseVisualStyleBackColor = true;
@@ -268,11 +258,10 @@
             this.Controls.Add(this.butKoma);
             this.Controls.Add(this.butZero);
             this.Controls.Add(this.resultBox);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.labOperation);
             this.Controls.Add(this.numbDivis);
             this.Controls.Add(this.butDeleteAll);
             this.Controls.Add(this.butDeleteCurrently);
-            this.Controls.Add(this.butProcent);
             this.Controls.Add(this.butMultiple);
             this.Controls.Add(this.numb9);
             this.Controls.Add(this.numb8);
@@ -290,7 +279,6 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion
@@ -310,8 +298,7 @@
         private System.Windows.Forms.Button numbDivis;
         private System.Windows.Forms.Button butDeleteAll;
         private System.Windows.Forms.Button butDeleteCurrently;
-        private System.Windows.Forms.Button butProcent;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labOperation;
         private System.Windows.Forms.TextBox resultBox;
         private System.Windows.Forms.Button butZero;
         private System.Windows.Forms.Button butKoma;
