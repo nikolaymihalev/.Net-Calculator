@@ -45,10 +45,20 @@ namespace Calculator
         private void operator_click(object sender, EventArgs e)
         {
             Button button = (Button)sender;
-            operationPerformed = button.Text;
-            result=double.Parse(resultBox.Text);
-            labOperation.Text = $"{result} {operationPerformed}";
-            isOperationPerformed = true;
+            if (result != 0)
+            {
+                butEqual.PerformClick();
+                operationPerformed = button.Text;
+                labOperation.Text = $"{result} {operationPerformed}";
+                isOperationPerformed = true;
+            }
+            else
+            {
+                operationPerformed = button.Text;
+                result=double.Parse(resultBox.Text);
+                labOperation.Text = $"{result} {operationPerformed}";
+                isOperationPerformed = true;
+            }
         }
 
         private void Form1_Load(object sender, EventArgs e)
