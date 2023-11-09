@@ -53,6 +53,7 @@
             // 
             // num1
             // 
+            this.num1.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold);
             this.num1.Location = new System.Drawing.Point(22, 395);
             this.num1.Name = "num1";
             this.num1.Size = new System.Drawing.Size(90, 76);
@@ -63,6 +64,7 @@
             // 
             // num2
             // 
+            this.num2.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold);
             this.num2.Location = new System.Drawing.Point(118, 395);
             this.num2.Name = "num2";
             this.num2.Size = new System.Drawing.Size(90, 76);
@@ -73,6 +75,7 @@
             // 
             // numb3
             // 
+            this.numb3.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold);
             this.numb3.Location = new System.Drawing.Point(214, 395);
             this.numb3.Name = "numb3";
             this.numb3.Size = new System.Drawing.Size(90, 76);
@@ -83,6 +86,7 @@
             // 
             // butPlus
             // 
+            this.butPlus.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold);
             this.butPlus.Location = new System.Drawing.Point(310, 313);
             this.butPlus.Name = "butPlus";
             this.butPlus.Size = new System.Drawing.Size(90, 76);
@@ -93,6 +97,7 @@
             // 
             // butMinus
             // 
+            this.butMinus.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold);
             this.butMinus.Location = new System.Drawing.Point(310, 231);
             this.butMinus.Name = "butMinus";
             this.butMinus.Size = new System.Drawing.Size(90, 76);
@@ -103,6 +108,7 @@
             // 
             // numb6
             // 
+            this.numb6.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold);
             this.numb6.Location = new System.Drawing.Point(214, 313);
             this.numb6.Name = "numb6";
             this.numb6.Size = new System.Drawing.Size(90, 76);
@@ -113,6 +119,7 @@
             // 
             // numb5
             // 
+            this.numb5.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold);
             this.numb5.Location = new System.Drawing.Point(118, 313);
             this.numb5.Name = "numb5";
             this.numb5.Size = new System.Drawing.Size(90, 76);
@@ -123,6 +130,7 @@
             // 
             // numb4
             // 
+            this.numb4.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold);
             this.numb4.Location = new System.Drawing.Point(22, 313);
             this.numb4.Name = "numb4";
             this.numb4.Size = new System.Drawing.Size(90, 76);
@@ -133,6 +141,7 @@
             // 
             // butMultiple
             // 
+            this.butMultiple.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold);
             this.butMultiple.Location = new System.Drawing.Point(310, 149);
             this.butMultiple.Name = "butMultiple";
             this.butMultiple.Size = new System.Drawing.Size(90, 76);
@@ -143,6 +152,7 @@
             // 
             // numb9
             // 
+            this.numb9.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold);
             this.numb9.Location = new System.Drawing.Point(214, 231);
             this.numb9.Name = "numb9";
             this.numb9.Size = new System.Drawing.Size(90, 76);
@@ -153,6 +163,7 @@
             // 
             // numb8
             // 
+            this.numb8.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold);
             this.numb8.Location = new System.Drawing.Point(118, 231);
             this.numb8.Name = "numb8";
             this.numb8.Size = new System.Drawing.Size(90, 76);
@@ -163,6 +174,7 @@
             // 
             // numb7
             // 
+            this.numb7.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold);
             this.numb7.Location = new System.Drawing.Point(22, 231);
             this.numb7.Name = "numb7";
             this.numb7.Size = new System.Drawing.Size(90, 76);
@@ -173,6 +185,7 @@
             // 
             // numbDivis
             // 
+            this.numbDivis.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold);
             this.numbDivis.Location = new System.Drawing.Point(214, 149);
             this.numbDivis.Name = "numbDivis";
             this.numbDivis.Size = new System.Drawing.Size(90, 76);
@@ -183,6 +196,7 @@
             // 
             // butDeleteAll
             // 
+            this.butDeleteAll.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold);
             this.butDeleteAll.Location = new System.Drawing.Point(118, 149);
             this.butDeleteAll.Name = "butDeleteAll";
             this.butDeleteAll.Size = new System.Drawing.Size(90, 76);
@@ -193,6 +207,7 @@
             // 
             // butDeleteCurrently
             // 
+            this.butDeleteCurrently.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.butDeleteCurrently.Location = new System.Drawing.Point(22, 149);
             this.butDeleteCurrently.Name = "butDeleteCurrently";
             this.butDeleteCurrently.Size = new System.Drawing.Size(90, 76);
@@ -222,6 +237,7 @@
             // 
             // butZero
             // 
+            this.butZero.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold);
             this.butZero.Location = new System.Drawing.Point(22, 477);
             this.butZero.Name = "butZero";
             this.butZero.Size = new System.Drawing.Size(186, 76);
@@ -232,6 +248,7 @@
             // 
             // butKoma
             // 
+            this.butKoma.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold);
             this.butKoma.Location = new System.Drawing.Point(214, 477);
             this.butKoma.Name = "butKoma";
             this.butKoma.Size = new System.Drawing.Size(90, 76);
@@ -242,6 +259,7 @@
             // 
             // butEqual
             // 
+            this.butEqual.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold);
             this.butEqual.Location = new System.Drawing.Point(310, 395);
             this.butEqual.Name = "butEqual";
             this.butEqual.Size = new System.Drawing.Size(90, 158);
