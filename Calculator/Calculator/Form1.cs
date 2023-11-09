@@ -56,5 +56,24 @@ namespace Calculator
             resultBox.Text = "0";
             result = 0;
         }
+
+        private void butEqual_Click(object sender, EventArgs e)
+        {
+            switch (operationPerformed)
+            {
+                case "+":
+                    resultBox.Text = (result + double.Parse(resultBox.Text)).ToString();
+                    break;
+                case "-":
+                    resultBox.Text = (result - double.Parse(resultBox.Text)).ToString();
+                    break;
+                case "*":
+                    resultBox.Text = (result * double.Parse(resultBox.Text)).ToString();
+                    break;
+                case "/":
+                    resultBox.Text = (result / double.Parse(resultBox.Text)).ToString();
+                    break;
+            }
+        }
     }
 }

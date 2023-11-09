@@ -248,6 +248,7 @@
             this.butEqual.TabIndex = 21;
             this.butEqual.Text = "=";
             this.butEqual.UseVisualStyleBackColor = true;
+            this.butEqual.Click += new System.EventHandler(this.butEqual_Click);
             // 
             // Form1
             // 
