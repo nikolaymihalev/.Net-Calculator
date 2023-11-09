@@ -94,6 +94,9 @@ namespace Calculator
                     resultBox.Text = (result / double.Parse(resultBox.Text)).ToString();
                     break;
             }
+
+            result = double.Parse(resultBox.Text);
+            labOperation.Text = "";
         }
     }
 }
