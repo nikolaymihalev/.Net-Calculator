@@ -30,7 +30,17 @@ namespace Calculator
 
             isOperationPerformed = false;
             Button button = (Button)sender;
-            resultBox.Text += button.Text;
+            if (button.Text == ",")
+            {
+                if (!resultBox.Text.Contains(","))
+                {
+                    resultBox.Text += button.Text;
+                }
+            }
+            else
+            {
+                resultBox.Text += button.Text;
+            }
         }
         private void operator_click(object sender, EventArgs e)
         {
